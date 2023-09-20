@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Form</title>
+    <link rel="stylesheet" href="add_problem.css"> <!-- Include your CSS file here -->
+</head>
+<body>
+    <div class="container">
+        <h2 class="form-heading">Add Problem</h2>
+        <form action="add_problem.php" method="post">
+            <!-- Add your input fields for name, date, problem, and solution here -->
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+
+            <label for="date">Date:</label>
+            <input type="date" name="date" required>
+
+            <label for="problem">Problem:</label>
+            <textarea name="problem" required></textarea> <!-- Changed to textarea for longer text -->
+
+            <label for="solution">Solution:</label>
+            <textarea name="solution" required></textarea> <!-- Changed to textarea for longer text -->
+
+            <button type="submit" class="register-button">Add</button>
+        </form>
+    </div>
+</body>
+</html>

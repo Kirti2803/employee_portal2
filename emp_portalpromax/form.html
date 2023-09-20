@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="signup.php" method="post" onsubmit="return validateForm()">
+            <table>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" name="username" id="signupUsername" required></td>
+                </tr>
+                <tr>
+                    <td><label for="staffNumber">Staff Number:</label></td>
+                    <td><input type="text" name="staffNumber" required></td>
+                </tr>
+                <tr>
+                    <td><label for="department">Department:</label></td>
+                    <td><input type="text" name="department" required></td>
+                </tr>
+                <tr>
+                    <td><label for="sbu">SBU:</label></td>
+                    <td><input type="text" name="sbu" required></td>
+                </tr>
+                <tr>
+                    <td><label for="programmingLanguages">Programming Languages:</label></td>
+                    <td>
+                        <select name="programmingLanguages" required>
+                            <option value="Language 1">Language 1</option>
+                            <option value="Language 2">Language 2</option>
+                            <option value="Language 3">Language 3</option>
+                            <option value="Language 4">Language 4</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="networkLanguages">Network Languages:</label></td>
+                    <td>
+                        <select name="networkLanguages" required>
+                            <option value="Network Language 1">Network Language 1</option>
+                            <option value="Network Language 2">Network Language 2</option>
+                            <option value="Network Language 3">Network Language 3</option>
+                            <option value="Network Language 4">Network Language 4</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="networkPlatform">Network Platform:</label></td>
+                    <td>
+                        <select name="networkPlatform" required>
+                            <option value="Platform 1">Platform 1</option>
+                            <option value="Platform 2">Platform 2</option>
+                            <option value="Platform 3">Platform 3</option>
+                            <option value="Platform 4">Platform 4</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="operationSystem">Operation System:</label></td>
+                    <td><input type="text" name="operationSystem" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Create Password:</label></td>
+                    <td><input type="password" name="password" id="signupPassword" required></td>
+                </tr>
+                <tr>
+                    <td><label for="retypePassword">Retype Password:</label></td>
+                    <td><input type="password" name="retypePassword" required></td>
+                </tr>
+            </table>
+            <button type="submit" class="register-button">Register</button>
+        </form>
+    </div>
+</body>
+</html>
